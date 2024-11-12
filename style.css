@@ -1,0 +1,45 @@
+/* Div with overflow: visible; content spills outside the box */
+div.visible {
+  width: 250px;
+  height: 60px;
+  background-color: orange;
+  overflow: visible;
+  border: 1px solid black;
+}
+
+/* Div with overflow: hidden; content is clipped if it overflows */
+div.hidden {
+  width: 250px;
+  height: 60px;
+  background-color: orange;
+  border: 1px solid black;
+  overflow: hidden;
+}
+
+/* Div with overflow: scroll; scrollbars appear even if content doesn't overflow */
+div.scroll {
+  width: 250px;
+  height: 100px;
+  background-color: orange;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+/* Div with overflow: auto; scrollbars appear if content overflows */
+div.auto {
+  width: 250px;
+  height: 60px;
+  background-color: orange;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+/* Div with overflow-x and overflow-y properties */
+div.overflow-xy {
+  width: 250px;
+  height: 70px;
+  background-color: orange;
+  border: 1px solid black;
+  overflow-x: hidden; /* Prevents horizontal overflow */
+  overflow-y: scroll; /* Enables vertical scrolling if needed */
+}
